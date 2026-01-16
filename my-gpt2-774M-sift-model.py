@@ -230,7 +230,7 @@ def token_ids_to_text(token_ids, tokenizer):
 def format_input(entry):
     instruction_text = (
         f"Below is an instruction that describes a task. "
-        f"Write a response that appropriately completes the request."
+        f"\nWrite a response that correctly satisfies the request."
         f"\n\n### Instruction:\n{entry['instruction']}"
     )
 
@@ -294,4 +294,4 @@ for prompt in prompts[:2]:
 
     print(input_text)
     print(f"\nModel response:\n>> {response_text.strip()}")
-    print("-------------------------------------")
+    print("-------------------------------------\n\n\n")
